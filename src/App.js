@@ -1,6 +1,6 @@
 
 import './App.css';
-import Plant from './components/ToDo.js';
+import Plant from './components/Plant.js';
 
 function App() {
   return (
