@@ -1,14 +1,26 @@
-
+import React, { Component } from 'react';
+import { Router, Route, Link } from 'react-router-dom';
 import './App.css';
-import Plant from './components/Plant.js';
+import Landing from './components/Landing';
+import Library from './components/Library';
+import Plant from './components/Plant';
 
 function App() {
   return (
     <div className="App">
-      <ul>
-          <Plant />
-          <Plant />
-        </ul>
+      <header>
+        <h1>Plant Folio</h1>
+      </header>
+      <nav>
+        <Link to='/'>Landing</Link>
+        <Link to='/library'>Library</Link>
+      </nav>
+      <main>
+      <Route exact path="/" component={Landing} />
+      <Route path="/library" component={Library} />
+      <Route path="/plant/" component={Plant} />
+      <Route path="/plant/:slug" component={Plant} />
+      </main>
     </div>
   );
 }
