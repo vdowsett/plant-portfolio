@@ -18,6 +18,7 @@ class Library extends Component {
                 <Link to={`/plant/${plant.slug}`} key={index}><img src={plant.plantCover} width={500}/></Link>
               
                <div><Link to={`/plant/${plant.slug}`} key={index}>{plant.name}</Link></div>
+               {console.log(plant.plantInformation.genus)}
                <div>{plant.plantInformation.genus} {plant.plantInformation.species} <i>'{plant.plantInformation.cultivar}'</i></div>
             </div>
           )
