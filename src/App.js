@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Router, Route, Link } from 'react-router-dom';
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import Landing from './components/Landing';
 import Library from './components/Library';
 import Plant from './components/Plant';
