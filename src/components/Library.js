@@ -15,7 +15,7 @@ class Library extends Component {
          {
           this.state.plants.map( (plant, index) => 
             <div key={index} >
-                <Link to={`/plant/${plant.slug}`} key={index}><img src={plant.plantCover} width={500}/></Link>
+                <Link to={`/plant/${plant.slug}`} key={index}><img src={plant.images.plantCover} width={500}/></Link>
               
                <div><Link to={`/plant/${plant.slug}`} key={index}>{plant.name}</Link></div>
                {console.log(plant.plantInformation.genus)}
