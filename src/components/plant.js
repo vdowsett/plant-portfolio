@@ -4,6 +4,7 @@ import PlantCover from './plantCover.js';
 import PlantGrowth from './plantGrowth.js';
 import PlantCareUse from './plantCareUse.js';
 import GrowthCycle from './growthCycle.js';
+import Benefits from './benefits.js';
 
 // CSS
 import Box from '@material-ui/core/Box';
@@ -36,7 +37,8 @@ class Plant extends Component {
           
         </Container></Box>
         
-        
+        <Benefits plant={this.state.plant} slug={this.props.match.params.slug}/>
+
       </section>
       );
   }

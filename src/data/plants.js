@@ -58,13 +58,21 @@ export default [{
         competitors: 'Unknown',
     },
     plantUse: {
-        gardenBenefits: 'Beneficial Insects, Deer and Rabbit Resistant, ',
         culinaryUses: 'Part of the mint family, this edible foliage raw or cooked, used in salads, jellies, sorbets, syrups or cooked foods. It adds spiciness. Pairs well with tomato dishes, or as stuffing in meat or poultry dishes. Combines well with tropical fruits such as mango. Flowers make edible garnish. Dried flowers can be brewed as tea',
         medicinalUses: 'Antimicrobial and antiseptic, often used to treat colds and flu. The soothing effect on the digestive tract helps to treat indigestion, bloating and nausea. Can assist with headaches, insomnia and menstrual pain. Can be used as a mouthwash for sore throats, toothaches and mouth sores.',
         resources: '<a href="https://www.gardenia.net/plant-variety/monarda-bee-balm">Gardenia</a>, <a href="https://garden.org/plants/view/77839/Bee-Balm-Monarda-didyma/">Garden.org</a>, <a href="http://theepicentre.com/spice/bee-balm-bergamot_monarda/">The epi Centre</a>, <a href="https://theherbalacademy.com/benefits-of-bee-balm-monarda-fistulosa-and-m-didyma/">The Herbal Academy</a>',
         lore: 'Oswego tea because Native American people in the Oswego, NY region used it for teas. In the language of flowers, Monarda symbolizes compassion and sympathy.',
         recipeIdeas: '...',
-    }
+    },
+    gardenBenefits: [
+        { name: 'insectory'},
+        { name: 'birds'},
+        { name: 'fumegant'},
+        { name: 'rabbitResistant' },
+        { name: 'deerResistant'},
+        { name: 'groundCover'},
+        { name: 'edibleRoot'},
+    ],
   },
   {
     name: 'x',

@@ -45,10 +45,6 @@ class PlantCareUse extends Component {
         <Grid item xs={4}> 
         </Grid>
 
-        <Grid xs={12} style={{ backgroundColor: '#ececec'}}><Typography variant="h4" color="textSecondary" align="left" gutterBottom>Garden Benefits: </Typography><Divider /><Typography variant="body1" color="textSecondary" align="left" gutterBottom>{this.state.plant.plantUse.gardenBenefits}</Typography>
-
-        </Grid>
-
         <Grid item xs={8}>
         </Grid>
 
