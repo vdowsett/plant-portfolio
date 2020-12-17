@@ -15,11 +15,10 @@ function App() {
           <h1>Plant Folio</h1>
         </header>
         <nav>
-          <Link to='/'>Landing</Link>
-          <Link to='/library'>Library</Link>
+          <Link to='/'>Home</Link>
         </nav>
         <main>
-        <Route exact path="/" component={Landing} />
+        <Route exact path="/" component={Library} />
         <Route path="/library" component={Library} />
         <Route path="/plant/:slug" component={Plant} />
         </main>

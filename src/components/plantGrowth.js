@@ -33,7 +33,6 @@ class PlantGrowth extends Component {
       <Grid item xs={4}>
         <Typography variant="h2" color="textSecondary" align="left" gutterBottom>
             Growing Requirements:
-            <Divider />
             <List>
               <ListItem><ListItemText>Sun or Shade: <b>{this.state.plant.growthRequirements.sunShade}</b></ListItemText></ListItem>
               <ListItem><ListItemText>Zones: <b>{this.state.plant.growthRequirements.zones}</b></ListItemText></ListItem>
@@ -45,7 +44,6 @@ class PlantGrowth extends Component {
 
           <Typography variant="h2" color="textSecondary" align="left" gutterBottom>
             Growth Habbit:
-            <Divider />
             <List>
               <ListItem><ListItemText>Habit: <b>{this.state.plant.growthHabbit.habit}</b></ListItemText></ListItem>
               <ListItem><ListItemText>Life Cycle: <b>{this.state.plant.growthHabbit.lifeCycle}</b></ListItemText></ListItem>
@@ -61,7 +59,6 @@ class PlantGrowth extends Component {
 
           <Typography variant="h2" color="textSecondary" align="left" gutterBottom>
             Plant Propagation:
-            <Divider />
             <List>
               <ListItem><ListItemText>Seed & Pollination: <b>{this.state.plant.plantPropagation.seed}</b></ListItemText></ListItem>
               <ListItem><ListItemText>Seed Time: <b>{this.state.plant.plantPropagation.seedTime}</b></ListItemText></ListItem>

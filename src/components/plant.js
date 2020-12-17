@@ -29,16 +29,12 @@ class Plant extends Component {
         <PlantCover plant={this.state.plant} slug={this.props.match.params.slug}/>
 
         <GrowthCycle plant={this.state.plant} slug={this.props.match.params.slug}/>
-        
-        <Box><Container>
-        
-          <PlantGrowth plant={this.state.plant} slug={this.props.match.params.slug}/>
-          <PlantCareUse plant={this.state.plant} slug={this.props.match.params.slug}/>
-          
-        </Container></Box>
-        
+
+        <Box><Container><PlantGrowth plant={this.state.plant} slug={this.props.match.params.slug}/></Container></Box>
+
         <Benefits plant={this.state.plant} slug={this.props.match.params.slug}/>
 
+        <Box><Container><PlantCareUse plant={this.state.plant} slug={this.props.match.params.slug}/></Container></Box>
       </section>
       );
   }

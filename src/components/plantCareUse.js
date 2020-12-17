@@ -8,6 +8,7 @@ import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemText from '@material-ui/core/ListItemText';
 import Divider from '@material-ui/core/Divider';
+import Image from 'react-bootstrap/Image'
 
 class PlantCareUse extends Component {
   constructor(props) { 
@@ -31,7 +32,7 @@ class PlantCareUse extends Component {
       <Grid container spacing={3}>
 
         <Grid item xs={8}>
-          <Typography variant="h4" color="textSecondary"  gutterBottom>Plant Care:</Typography><Divider />
+          <Typography variant="h2" color="textSecondary" align="left" gutterBottom><br/>Plant Care:</Typography>
           <Typography variant="body1" color="textSecondary"  gutterBottom><List>
               <ListItem><ListItemText >Known Pests: <b>{this.state.plant.plantCare.pests}</b></ListItemText></ListItem>
               <ListItem><ListItemText >Know Diseases: <b>{this.state.plant.plantCare.diseases}</b></ListItemText></ListItem>
@@ -42,27 +43,32 @@ class PlantCareUse extends Component {
               </List></Typography>
         </Grid>
 
-        <Grid item xs={4}> 
+        <Grid item xs={4}>
+        <Image src={this.state.plant.images.plantProfile} className="careImg"/>
         </Grid>
+
+        <Grid item xs={12}> <Divider/> </Grid>
+        <Grid item xs={6}><Typography variant="h2" color="textSecondary" align="left" gutterBottom>Culinary Uses: </Typography><Typography variant="body1" color="textSecondary" align="left" gutterBottom>{this.state.plant.plantUse.culinaryUses}</Typography></Grid>
+        <Grid item xs={6}><Typography variant="h2" color="textSecondary" align="left" gutterBottom>Medicinal Uses: </Typography><Typography variant="body1" color="textSecondary" align="left" gutterBottom>{this.state.plant.plantUse.medicinalUses}</Typography></Grid>
+        
+        <Grid item xs={12}> <Divider/> </Grid>
 
         <Grid item xs={8}>
+        <Image src={this.state.plant.images.plantProfile} className="recipeImg"/>
         </Grid>
 
         <Grid item xs={4}> 
-        <Typography variant="h4" color="textSecondary" align="left" gutterBottom>Resources: </Typography><Divider />
+        <Typography variant="h2" color="textSecondary" align="left" gutterBottom>Resources: </Typography>
         <Typography variant="body1" color="textSecondary" align="left" gutterBottom dangerouslySetInnerHTML={{ __html: resources }}></Typography>
-        <Typography variant="h4" color="textSecondary" align="left" gutterBottom>Recipe Ideas: </Typography><Divider />
+        <Typography variant="h2" color="textSecondary" align="left" gutterBottom>Recipe Ideas: </Typography>
         <Typography variant="body1" color="textSecondary" align="left" gutterBottom dangerouslySetInnerHTML={{ __html: recipeIdeas }}></Typography>
         </Grid>
-        
-        <Grid item xs={6}><Typography variant="h2" color="textSecondary" align="left" gutterBottom>Culinary Uses: </Typography><Divider /><Typography variant="body1" color="textSecondary" align="left" gutterBottom>{this.state.plant.plantUse.culinaryUses}</Typography></Grid>
-        
-        <Grid item xs={6}><Typography variant="h2" color="textSecondary" align="left" gutterBottom>Medicinal Uses: </Typography><Divider /><Typography variant="body1" color="textSecondary" align="left" gutterBottom>{this.state.plant.plantUse.medicinalUses}</Typography></Grid>
-        
-        
-        <Grid item xs={12}><Typography variant="h2" color="textSecondary" align="left" gutterBottom>Old Wifes Tales: </Typography><Divider /><Typography variant="body1" color="textSecondary" align="left" gutterBottom>{this.state.plant.plantUse.lore}</Typography></Grid>
 
-        </Grid>
+        <Grid item xs={12}> <Divider/> </Grid>
+        
+        <Grid item xs={12}><Typography variant="h2" color="textSecondary" align="left" gutterBottom>Old Wifes Tales: </Typography><Typography variant="body1" color="textSecondary" align="left" gutterBottom>{this.state.plant.plantUse.lore}</Typography></Grid>
+
+      </Grid>
       );
   }
 }

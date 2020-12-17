@@ -27,17 +27,17 @@ class PlantCover extends Component {
             title={this.state.plant.name}
             alt={this.state.plant.name}
             style={{ height: '35rem', objectFit: 'cover' }}/>
-          <Card.ImgOverlay style={{ width: '30rem', margin: '20px', backgroundColor: '#fff'}}>
-            <Typography variant="h1" component="h1" gutterBottom>
+          <Card.ImgOverlay style={{ width: '30rem', margin: '60px', paddingTop:'100px', backgroundColor: '#fff'}}>
+            <Typography variant="h2" component="h2" gutterBottom align='right'>
                 {this.state.plant.name}
             </Typography>
-            <Typography variant="subtitle1" color="textSecondary" component="p" gutterBottom>
+            <Typography variant="subtitle1" color="textSecondary" component="p" gutterBottom align='right'>
                 {this.state.plant.plantInformation.family} {this.state.plant.plantInformation.genus} {this.state.plant.plantInformation.species} "{this.state.plant.plantInformation.cultivar}"
             </Typography>
-            <Typography variant="h6" color="textSecondary" component="p" gutterBottom>
+            <Typography variant="h6" color="textSecondary" component="p" gutterBottom align='right'>
                 Common Names:
             </Typography>
-            <Typography variant="caption" color="textSecondary" component="p" gutterBottom>
+            <Typography variant="caption" color="textSecondary" component="p" gutterBottom align='right'>
                 {this.state.plant.plantInformation.commonNames}
             </Typography>
           </Card.ImgOverlay>

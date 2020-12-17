@@ -36,3 +36,10 @@
     transform: rotate(360deg);
   }
 }
+
+.library{
+  display: inline-block;
+  width: 20vw;
+  margin-inline: 20px;
+  margin-top: 40px;
+}

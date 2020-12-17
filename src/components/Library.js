@@ -1,3 +1,4 @@
+import { Typography } from '@material-ui/core';
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import plantData from './../data/plants.js';
@@ -11,15 +12,15 @@ class Library extends Component {
 
     render() {
      return ( 
-       <section className='library'>
+       <section>
          {
           this.state.plants.map( (plant, index) => 
-            <div key={index} >
-                <Link to={`/plant/${plant.slug}`} key={index}><img src={plant.images.plantCover} width={500}/></Link>
+            <div key={index} className='library'>
+                <Link to={`/plant/${plant.slug}`} key={index}><div className='libraryImgWrapper'><img src={plant.images.plantCover} className='libraryImg'/></div></Link>
               
-               <div><Link to={`/plant/${plant.slug}`} key={index}>{plant.name}</Link></div>
-               {console.log(plant.plantInformation.genus)}
-               <div>{plant.plantInformation.genus} {plant.plantInformation.species} <i>'{plant.plantInformation.cultivar}'</i></div>
+               <Typography variant="overline" color="textSecondary" style={{ fontSize: '1.5rem'}}><Link to={`/plant/${plant.slug}`} key={index}>{plant.name}</Link></Typography>
+               <br/>
+               <Typography variant="caption" color="textSecondary" style={{ fontSize: '1rem'}}>{plant.plantInformation.genus} {plant.plantInformation.species} <i>'{plant.plantInformation.cultivar}'</i></Typography>
             </div>
           )
         }

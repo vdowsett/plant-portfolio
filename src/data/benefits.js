@@ -5,6 +5,7 @@ export default [
     { name: 'rabbitResistant', icon: '/assets/images/benefitIcons/rabbit.svg', displayName: 'Rabbit Resistant',  },
     { name: 'deerResistant', icon: '/assets/images/benefitIcons/stag-head.svg', displayName: 'Deer Resistant',  },
     { name: 'groundCover', icon: '/assets/images/benefitIcons/vine-leaf.svg', displayName: 'Ground Cover',  },
+    { name: 'edibleFlower', icon: '/assets/images/benefitIcons/flower.svg', displayName: 'Edible Flower',  },
     { name: 'edibleFruit', icon: '/assets/images/benefitIcons/cherry.svg', displayName: 'Edible Fruit',  },
     { name: 'edibleLeaf', icon: '/assets/images/benefitIcons/falling-leaf.svg', displayName: 'Edible Leaf',  },
     { name: 'edibleRoot', icon: '/assets/images/benefitIcons/beet.svg', displayName: 'Edible Root',  },
