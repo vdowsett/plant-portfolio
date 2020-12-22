@@ -1,8 +1,10 @@
 export default [{
     name: 'Bee Balm',
     images: {
-        plantCover: '/assets/images/plantCovers/placeholder.jpg',
-        plantProfile: '/assets/images/plantProfile/placeholder.jpg', 
+        plantCover: '/assets/images/plantCovers/placeholderCover.jpg',
+        plantProfile: '/assets/images/plantProfile/placeholderProfile.jpg', 
+        plantRecipe:'/assets/images/plantProfile/placeholderRecipe.jpg',
+        plantCare:'/assets/images/plantProfile/placeholderCare.jpg',
         seed: '/assets/images/seed/placeholder.jpg',
         seedling: '/assets/images/seedling/placeholder.jpg',
         growingPlant: '/assets/images/growingPlant/placeholder.jpg',
@@ -60,9 +62,9 @@ export default [{
     plantUse: {
         culinaryUses: 'Part of the mint family, this edible foliage raw or cooked, used in salads, jellies, sorbets, syrups or cooked foods. It adds spiciness. Pairs well with tomato dishes, or as stuffing in meat or poultry dishes. Combines well with tropical fruits such as mango. Flowers make edible garnish. Dried flowers can be brewed as tea',
         medicinalUses: 'Antimicrobial and antiseptic, often used to treat colds and flu. The soothing effect on the digestive tract helps to treat indigestion, bloating and nausea. Can assist with headaches, insomnia and menstrual pain. Can be used as a mouthwash for sore throats, toothaches and mouth sores.',
-        resources: '<a href="https://www.gardenia.net/plant-variety/monarda-bee-balm">Gardenia</a>, <a href="https://garden.org/plants/view/77839/Bee-Balm-Monarda-didyma/">Garden.org</a>, <a href="http://theepicentre.com/spice/bee-balm-bergamot_monarda/">The epi Centre</a>, <a href="https://theherbalacademy.com/y-of-bee-balm-monarda-fistulosa-and-m-didyma/">The Herbal Academy</a>',
-        lore: 'Oswego tea because Native American people in the Oswego, NY region used it for teas. In the language of flowers, Monarda symbolizes compassion and sympathy.',
-        recipeIdeas: '...',
+        resources: '<ul><li><a href="https://www.gardenia.net/plant-variety/monarda-bee-balm">Gardenia</a></li><li><a href="https://garden.org/plants/view/77839/Bee-Balm-Monarda-didyma/">Garden.org</a></li> <li><a href="http://theepicentre.com/spice/bee-balm-bergamot_monarda/">The epi Centre</a></li><li><a href="https://www.swallowtailgardenseeds.com/perennials/bee-balm/panorama-red-bee-balm-seeds.html">Seed from Swallowtail</a></li></ul>',
+        lore: 'Oswego tea because Native American people in the Oswego, NY region used it for teas. Another story suggests that colonists made bee balm tea in the Boston Tea Party era when they were boycotting British black tea. In the language of flowers, Monarda symbolizes compassion and sympathy.',
+        recipeIdeas: '<ol><li>Pick some bee balm and remove the leaves from the stems and red petals from the flower heads.</li><li>Fill a mason jar with cold water and add the bee balm. Seal the jar and place it in the refrigerator for up to 24 hours.</li><li>Strain the tea and serve over ice with honey and a slice of lemon. Bee balm tea will keep in the refrigerator for up to a week.',
     },
     gardenBenefits: [
         { name: 'insectory'},
@@ -70,7 +72,6 @@ export default [{
         { name: 'fumegant'},
         { name: 'rabbitResistant' },
         { name: 'deerResistant'},
-        { name: 'groundCover'},
         { name: 'edibleFlower'},
         { name: 'edibleLeaf'},
     ],

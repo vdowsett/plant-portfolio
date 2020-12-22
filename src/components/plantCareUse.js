@@ -44,7 +44,7 @@ class PlantCareUse extends Component {
         </Grid>
 
         <Grid item xs={4}>
-        <Image src={this.state.plant.images.plantProfile} className="careImg"/>
+        <Image src={this.state.plant.images.plantCare} className="careImg"/>
         </Grid>
 
         <Grid item xs={12}> <Divider/> </Grid>
@@ -54,13 +54,13 @@ class PlantCareUse extends Component {
         <Grid item xs={12}> <Divider/> </Grid>
 
         <Grid item xs={8}>
-        <Image src={this.state.plant.images.plantProfile} className="recipeImg"/>
+        <Image src={this.state.plant.images.plantRecipe} className="recipeImg"/>
         </Grid>
 
         <Grid item xs={4}> 
         <Typography variant="h2" color="textSecondary" align="left" gutterBottom>Resources: </Typography>
         <Typography variant="body1" color="textSecondary" align="left" gutterBottom dangerouslySetInnerHTML={{ __html: resources }}></Typography>
-        <Typography variant="h2" color="textSecondary" align="left" gutterBottom>Recipe Ideas: </Typography>
+        <Typography variant="h2" color="textSecondary" align="left" gutterBottom>Recipe Idea: </Typography>
         <Typography variant="body1" color="textSecondary" align="left" gutterBottom dangerouslySetInnerHTML={{ __html: recipeIdeas }}></Typography>
         </Grid>
 
